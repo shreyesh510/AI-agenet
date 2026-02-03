@@ -1,15 +1,29 @@
-From: john.doe@gmail.com
-Subject: Order Request
+From: john.doe@techstartup.io
+To: orders@yourcompany.com
+Subject: Need laptops for new team members - Urgent
 
-Hi,
+Hi Team,
 
-I would like to order 2 Laptops.
+Hope you're doing well! I'm reaching out because we just hired 2 new developers and they need laptops ASAP. Our IT guy recommended your company for hardware purchases.
 
-Please deliver to:
+I'm looking to order 2 Laptops for them. We need something reliable for software development work. I saw on your website that you have some good options available.
+
+Could you please process this order and have it delivered to our office? Here are the details:
+
+Recipient: John Doe
+Company: TechStartup Inc.
+Address: 123 Innovation Drive, Suite 400, San Francisco, CA 94105
+Phone: (415) 555-8234
+Email: john.doe@techstartup.io
+
+We're on a tight deadline since the new hires start next Monday, so expedited shipping would be great if possible. Please let me know the total amount and expected delivery date.
+
+Also, do you offer any bulk discounts? We might need more equipment in the coming months as we continue to grow.
+
+Looking forward to hearing from you soon.
+
+Best regards,
 John Doe
-123 Main Street
-New York, NY 10001
-Phone: 555-123-4567
-
-Thanks,
-John
+Operations Manager
+TechStartup Inc.
+Phone: (415) 555-8234

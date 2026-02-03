@@ -1,12 +1,33 @@
-Hey there!
+From: sarah.miller@designagency.com
+To: orders@yourcompany.com
+Subject: Re: Office supplies order
 
-Can I get 3 wireless keyboards and 2 wireless mouse shipped to my address?
+Hey!
 
-Name: Sarah Miller
-Address: 456 Oak Avenue, Los Angeles, CA 90001
-Email: sarah.miller@yahoo.com
+Thanks for getting back to me about the pricing. After discussing with my manager, we've decided to go ahead with the order.
 
-Let me know the total cost.
+So here's what we need:
+- 3x Wireless Keyboard (the ergonomic ones you showed me)
+- 2x Wireless Mouse
 
-Cheers,
+Our designers have been complaining about the old wired peripherals forever, so this should make them happy lol. The wireless setup will definitely help clean up their desks too.
+
+Shipping info:
+Sarah Miller
+Creative Design Agency
+456 Oak Avenue, Floor 2
+Los Angeles, CA 90001
+
+You can reach me at sarah.miller@designagency.com or call me at 310-555-9821 if there are any issues with the order.
+
+Oh and one more thing - could you include a receipt in the package? Our accounting department needs it for expense reports.
+
+Thanks so much for your help with this!
+
 Sarah
+
+---
+Sarah Miller
+Office Manager
+Creative Design Agency
+"Where creativity meets innovation"
