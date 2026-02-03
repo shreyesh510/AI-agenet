@@ -1,0 +1,70 @@
+### Product API Tests
+### Base URL
+@baseUrl = http://localhost:3000/api
+
+### ============================================
+### CREATE PRODUCT
+### ============================================
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "description": "High performance laptop with 16GB RAM",
+  "price": 999.99,
+  "stock": 50
+}
+
+### ============================================
+### CREATE ANOTHER PRODUCT
+### ============================================
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Wireless Mouse",
+  "description": "Ergonomic wireless mouse",
+  "price": 29.99,
+  "stock": 100
+}
+
+### ============================================
+### CREATE THIRD PRODUCT
+### ============================================
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Keyboard",
+  "description": "Mechanical keyboard with RGB",
+  "price": 79.99,
+  "stock": 75
+}
+
+### ============================================
+### GET ALL PRODUCTS
+### ============================================
+GET {{baseUrl}}/products
+
+### ============================================
+### GET PRODUCT BY ID
+### ============================================
+GET {{baseUrl}}/products/1
+
+### ============================================
+### UPDATE PRODUCT
+### ============================================
+PUT {{baseUrl}}/products/1
+Content-Type: application/json
+
+{
+  "name": "Laptop Pro",
+  "description": "High performance laptop with 32GB RAM",
+  "price": 1299.99,
+  "stock": 45
+}
+
+### ============================================
+### DELETE PRODUCT
+### ============================================
+DELETE {{baseUrl}}/products/1

@@ -1,0 +1,15 @@
+From: john.doe@gmail.com
+Subject: Order Request
+
+Hi,
+
+I would like to order 2 Laptops.
+
+Please deliver to:
+John Doe
+123 Main Street
+New York, NY 10001
+Phone: 555-123-4567
+
+Thanks,
+John

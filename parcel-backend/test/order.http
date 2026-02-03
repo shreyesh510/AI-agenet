@@ -1,0 +1,89 @@
+### Order API Tests
+### Base URL
+@baseUrl = http://localhost:3000/api
+
+### ============================================
+### CREATE ORDER (Customer orders products)
+### ============================================
+POST {{baseUrl}}/orders
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "productId": 2,
+      "quantity": 3
+    }
+  ]
+}
+
+### ============================================
+### CREATE ANOTHER ORDER
+### ============================================
+POST {{baseUrl}}/orders
+Content-Type: application/json
+
+{
+  "customerId": 2,
+  "items": [
+    {
+      "productId": 3,
+      "quantity": 1
+    }
+  ]
+}
+
+### ============================================
+### GET ALL ORDERS
+### ============================================
+GET {{baseUrl}}/orders
+
+### ============================================
+### GET ORDER BY ID
+### ============================================
+GET {{baseUrl}}/orders/1
+
+### ============================================
+### GET ORDERS BY CUSTOMER
+### ============================================
+GET {{baseUrl}}/orders/customer/1
+
+### ============================================
+### UPDATE ORDER STATUS
+### ============================================
+PUT {{baseUrl}}/orders/1/status
+Content-Type: application/json
+
+{
+  "status": "processing"
+}
+
+### ============================================
+### UPDATE ORDER STATUS TO SHIPPED
+### ============================================
+PUT {{baseUrl}}/orders/1/status
+Content-Type: application/json
+
+{
+  "status": "shipped"
+}
+
+### ============================================
+### UPDATE ORDER STATUS TO DELIVERED
+### ============================================
+PUT {{baseUrl}}/orders/1/status
+Content-Type: application/json
+
+{
+  "status": "delivered"
+}
+
+### ============================================
+### DELETE ORDER
+### ============================================
+DELETE {{baseUrl}}/orders/1

@@ -1,0 +1,57 @@
+### Customer API Tests
+### Base URL
+@baseUrl = http://localhost:3000/api
+
+### ============================================
+### CREATE CUSTOMER
+### ============================================
+POST {{baseUrl}}/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "1234567890",
+  "address": "123 Main St, City"
+}
+
+### ============================================
+### CREATE ANOTHER CUSTOMER
+### ============================================
+POST {{baseUrl}}/customers
+Content-Type: application/json
+
+{
+  "name": "Jane Smith",
+  "email": "jane@example.com",
+  "phone": "9876543210",
+  "address": "456 Oak Ave, Town"
+}
+
+### ============================================
+### GET ALL CUSTOMERS
+### ============================================
+GET {{baseUrl}}/customers
+
+### ============================================
+### GET CUSTOMER BY ID
+### ============================================
+GET {{baseUrl}}/customers/1
+
+### ============================================
+### UPDATE CUSTOMER
+### ============================================
+PUT {{baseUrl}}/customers/1
+Content-Type: application/json
+
+{
+  "name": "John Doe Updated",
+  "email": "john.updated@example.com",
+  "phone": "1112223333",
+  "address": "789 New St, New City"
+}
+
+### ============================================
+### DELETE CUSTOMER
+### ============================================
+DELETE {{baseUrl}}/customers/1
