@@ -1,5 +1,8 @@
 # AI Agent Projects
-
+  cd D:\strakly\strakly-bot
+  python -m venv venv
+  venv\Scripts\activate
+  pip install -r requirements.txt
 ## Projects
 
 ### 1. main-agent (FastAPI)

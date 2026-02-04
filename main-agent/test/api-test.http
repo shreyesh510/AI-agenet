@@ -1,0 +1,15 @@
+### Root - GET API
+GET http://localhost:8000/
+Content-Type: application/json
+
+###
+
+### Chat API - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "message": "Hello, how are you?"
+}
+
+###
