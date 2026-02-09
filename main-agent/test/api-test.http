@@ -9,7 +9,7 @@ POST http://localhost:8000/chat
 Content-Type: application/json
 
 {
-    "message": "Hello, how are you?"
+    "query": "Hello, how are you?"
 }
 
 ###
