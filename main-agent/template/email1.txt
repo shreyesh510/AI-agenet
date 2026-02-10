@@ -6,7 +6,7 @@ Hi Team,
 
 Hope you're doing well! I'm reaching out because we just hired 2 new developers and they need laptops ASAP. Our IT guy recommended your company for hardware purchases.
 
-I'm looking to order 2 Laptops for them. We need something reliable for software development work. I saw on your website that you have some good options available.
+I'm looking to order 2 Laptops ( productId : 1 ) for them. We need something reliable for software development work. I saw on your website that you have some good options available.
 
 Could you please process this order and have it delivered to our office? Here are the details:
 

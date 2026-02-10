@@ -11,6 +11,9 @@ from tools.customer_tools import (
     find_customer_by_email,
     get_all_customers,
     get_customer_by_id,
+)
+from tools.order_tools import (
+    get_all_orders,
     create_order,
 )
 
@@ -25,5 +28,6 @@ ALL_TOOLS = [
     find_customer_by_email,
     get_all_customers,
     get_customer_by_id,
+    get_all_orders,
     create_order,
 ]

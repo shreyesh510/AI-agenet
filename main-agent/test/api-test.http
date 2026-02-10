@@ -54,11 +54,21 @@ Content-Type: application/json
 
 ###
 
-### Create Order - POST
+### Get All Orders - POST
 POST http://localhost:8000/chat
 Content-Type: application/json
 
 {
-    "query": "create an order for customer id 1 with product id 1"
+    "query": "give me all orders list?"
+}
+
+###
+
+### Create Order From Email - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "query": "From: john@example.com\nTo: orders@yourcompany.com\nSubject: Need laptops for new team members - Urgent\n\nHi Team,\n\nHope you're doing well! I'm reaching out because we just hired 2 new developers and they need laptops ASAP. Our IT guy recommended your company for hardware purchases.\n\nI'm looking to order 2 Laptops ( productId : 1 ) for them. We need something reliable for software development work. I saw on your website that you have some good options available.\n\nCould you please process this order and have it delivered to our office? Here are the details:\n\nRecipient: John Doe\nAddress: 123 Main St, City\nPhone: 1234567890\nEmail: john@example.com\n\nWe're on a tight deadline since the new hires start next Monday, so expedited shipping would be great if possible. Please let me know the total amount and expected delivery date.\n\nAlso, do you offer any bulk discounts? We might need more equipment in the coming months as we continue to grow.\n\nLooking forward to hearing from you soon.\n\nBest regards,\nJohn Doe\nPhone: 1234567890"
 }
 

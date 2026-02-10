@@ -72,26 +72,3 @@ def get_customer_by_id(customer_id: int) -> dict:
         if data.get("success"):
             return {"success": True, "customer": data["data"]}
         return {"success": False, "error": data.get("error", "Failed to fetch customer")}
-
-
-@tool
-def create_order(customer_id: int, product_id: int) -> dict:
-    """Create a new order for a customer.
-
-    Args:
-        customer_id: The unique ID of the customer placing the order
-        product_id: The unique ID of the product to order
-    """
-    with httpx.Client() as client:
-        payload = {"product_id": product_id}
-        response = client.post(
-            f"{config.EXPRESS_API_URL}/customers/{customer_id}/orders", json=payload
-        )
-
-        if response.status_code == 404:
-            return {"success": False, "error": "Customer or product not found"}
-
-        data = response.json()
-        if data.get("success"):
-            return {"success": True, "order": data["data"]}
-        return {"success": False, "error": data.get("error", "Failed to create order")}
