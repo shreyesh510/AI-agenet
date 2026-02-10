@@ -12,4 +12,53 @@ Content-Type: application/json
     "query": "give me all product list?"
 }
 
+###
+
+### Find Customer By Name - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "query": "find customer John Doe"
+}
+
+###
+
+### Find Customer By Email - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "query": "find customer with email john@example.com"
+}
+
+###
+
+### Get All Customers - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "query": "give me all customer list?"
+}
+
+###
+
+### Get Customer By ID - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "query": "get customer with id 1"
+}
+
+###
+
+### Create Order - POST
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+    "query": "create an order for customer id 1 with product id 1"
+}
 

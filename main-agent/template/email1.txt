@@ -1,4 +1,4 @@
-From: john.doe@techstartup.io
+From: john@example.com
 To: orders@yourcompany.com
 Subject: Need laptops for new team members - Urgent
 
@@ -11,10 +11,9 @@ I'm looking to order 2 Laptops for them. We need something reliable for software
 Could you please process this order and have it delivered to our office? Here are the details:
 
 Recipient: John Doe
-Company: TechStartup Inc.
-Address: 123 Innovation Drive, Suite 400, San Francisco, CA 94105
-Phone: (415) 555-8234
-Email: john.doe@techstartup.io
+Address: 123 Main St, City
+Phone: 1234567890
+Email: john@example.com
 
 We're on a tight deadline since the new hires start next Monday, so expedited shipping would be great if possible. Please let me know the total amount and expected delivery date.
 
@@ -24,6 +23,4 @@ Looking forward to hearing from you soon.
 
 Best regards,
 John Doe
-Operations Manager
-TechStartup Inc.
-Phone: (415) 555-8234
+Phone: 1234567890

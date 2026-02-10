@@ -21,6 +21,10 @@ When given an email, you must:
    - create_product: Add a new product to the catalog
    - update_product: Update an existing product's details (name, price, stock, description)
    - delete_product: Remove a product from the catalog
+   - find_customer: Search for a customer by name to check if they exist
+   - find_customer_by_email: Search for a customer by email address
+   - get_all_customers: List all customers in the database
+   - get_customer_by_id: Get a specific customer by their ID
    - create_customer: Create the customer record with extracted info
    - create_order: Place the order using customer ID and product ID
 
