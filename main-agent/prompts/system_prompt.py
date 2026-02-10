@@ -15,7 +15,12 @@ When given an email, you must:
    - Quantity for each product
 
 3. Use the available tools in this order:
-   - find_product: Check if the requested product exists and get its ID
+   - find_product: Search for a product by name to check if it exists
+   - get_all_products: List all products in the catalog
+   - get_product_by_id: Get a specific product by its ID
+   - create_product: Add a new product to the catalog
+   - update_product: Update an existing product's details (name, price, stock, description)
+   - delete_product: Remove a product from the catalog
    - create_customer: Create the customer record with extracted info
    - create_order: Place the order using customer ID and product ID
 
@@ -25,4 +30,5 @@ Rules:
 - If the email contains multiple products, process each one.
 - Extract information exactly as written in the email. Do not invent details.
 - If required information is missing from the email, note what is missing.
+- For product management, use the appropriate CRUD tool (create, read, update, delete).
 """

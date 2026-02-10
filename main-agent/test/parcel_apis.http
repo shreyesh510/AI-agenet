@@ -1,0 +1,10 @@
+### Parcel API Tests
+### Base URL
+@baseUrl = http://localhost:3000/api
+
+### ============================================
+### GET ALL PRODUCTS
+### ============================================
+GET {{baseUrl}}/products
+
+###
