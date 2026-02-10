@@ -23,7 +23,7 @@ function App() {
       const res = await fetch('/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query }),
+        body: JSON.stringify({ query, history: messages }),
       })
       const data = await res.json()
       setMessages(prev => [...prev, { role: 'agent', content: data.response || JSON.stringify(data) }])

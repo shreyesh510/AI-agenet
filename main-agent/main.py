@@ -19,7 +19,8 @@ def hello():
 async def chat_endpoint(request: Request):
     data = await request.json()
     query = data.get("query", "")
+    history = data.get("history", None)
 
-    response = mainAgent(query) or {"response": f"Received your query: {query}"}
+    response = mainAgent(query, history) or {"response": f"Received your query: {query}"}
     print("Response:", response)
     return response
