@@ -1,5 +1,5 @@
-From: john@example.com
-To: orders@yourcompany.com
+From: shreyeshk@iconnectsolutions.com
+To: skcoder510@gmail.com
 Subject: Need laptops for new team members - Urgent
 
 Hi Team,

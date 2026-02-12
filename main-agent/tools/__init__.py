@@ -16,6 +16,7 @@ from tools.order_tools import (
     get_all_orders,
     create_order,
 )
+from tools.gmail_tools import send_gmail
 
 ALL_TOOLS = [
     find_product,
@@ -30,4 +31,5 @@ ALL_TOOLS = [
     get_customer_by_id,
     get_all_orders,
     create_order,
+    send_gmail,
 ]

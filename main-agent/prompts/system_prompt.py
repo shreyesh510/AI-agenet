@@ -23,6 +23,7 @@ When given an email, you must:
    - step 5: If the product is not found, inform the user instead of guessing.
    - step 6: If the email contains multiple products, process each one separately and create individual orders for each product.
    - step 7: In reponse return Order ID(s) for the created order(s) or error messages if any step fails.
+   - step 8: After successfully creating the order, use send_gmail to send a confirmation email to the customer's email address with the order details (Order ID, product name, quantity). Subject should be "Order Confirmation - Order #<order_id>".
 
 4. Available tools:
    - find_product: Search for a product by name to check if it exists
@@ -38,6 +39,7 @@ When given an email, you must:
    - create_customer: Create the customer record with extracted info
    - get_all_orders: List all orders in the database
    - create_order: Place the order using customer ID and product ID
+   - send_gmail: Send an email to a customer via Gmail (for order confirmations, status updates)
 
 Rules:
 - Always use tools to perform actions. Never make up IDs or data.
