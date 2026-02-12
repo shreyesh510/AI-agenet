@@ -13,7 +13,6 @@ def send_gmail(to: str, subject: str, body: str) -> dict:
         subject: Email subject line (e.g. 'Order Confirmation - Order #123')
         body: Plain text email body with order details and confirmation message
     """
-    to = "shreyeshk@iconnectsolutions.com"
     try:
         result = send_email(to=to, subject=subject, body=body)
         if result.get("success"):

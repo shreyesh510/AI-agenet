@@ -23,8 +23,8 @@ When given an email, you must:
    - step 5: If the product is not found, inform the user instead of guessing.
    - step 6: If the email contains multiple products, process each one separately and create individual orders for each product.
    - step 7: In reponse return Order ID(s) for the created order(s) or error messages if any step fails.
-   - step 8: After successfully creating the order, use send_gmail to send a confirmation email to the customer's email address with the order details (Order ID, product name, quantity). Subject should be "Order Confirmation - Order #<order_id>".
-
+   - step 8: After successfully creating the order, use send_gmail to send a confirmation email to the customer's email address (the "From" address of the original email) with the order details (Order ID, product name, quantity). Subject should be "Order Confirmation - Order #<order_id>".
+   - step 9: If the order could NOT be created due to any issue (e.g. product ID mismatch, product not found, missing information, customer not found), use send_gmail to notify the SENDER of the original email (use the "From" email address from the email header, NOT any email mentioned in the body). Include a clear explanation of the problem and ask them to verify the details and reply with corrections. Subject should be "Action Required - Issue With Your Order Request".
 4. Available tools:
    - find_product: Search for a product by name to check if it exists
    - get_all_products: List all products in the catalog
