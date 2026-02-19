@@ -1,0 +1,51 @@
+### Parcel API Tests
+### Base URL
+@baseUrl = http://localhost:3000/api
+
+### ============================================
+### GET ALL PRODUCTS
+### ============================================
+GET {{baseUrl}}/products
+
+###
+
+### ============================================
+### GET ALL CUSTOMERS
+### ============================================
+GET {{baseUrl}}/customers
+
+###
+
+### ============================================
+### GET CUSTOMER BY ID
+### ============================================
+GET {{baseUrl}}/customers/1
+
+###
+
+### ============================================
+### FIND CUSTOMER BY EMAIL (client-side filter)
+### Uses GET /customers and filters by email
+### ============================================
+GET {{baseUrl}}/customers
+
+###
+
+### ============================================
+### GET ALL ORDERS
+### ============================================
+GET {{baseUrl}}/orders
+
+###
+
+### ============================================
+### CREATE ORDER
+### ============================================
+POST {{baseUrl}}/customers/1/orders
+Content-Type: application/json
+
+{
+    "product_id": 1
+}
+
+###

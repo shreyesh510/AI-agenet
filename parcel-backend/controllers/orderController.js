@@ -164,8 +164,60 @@ const deleteOrder = async (req, res) => {
   }
 };
 
+// Quick create order with just customerId and productId
+const quickCreateOrder = async (req, res) => {
+  const transaction = await sequelize.transaction();
+  try {
+    const customerId = req.params.customerId;
+    const { product_id } = req.body;
+
+    const customer = await Customer.findByPk(customerId);
+    if (!customer) {
+      await transaction.rollback();
+      return res.status(404).json({ success: false, error: 'Customer not found' });
+    }
+
+    const product = await Product.findByPk(product_id);
+    if (!product) {
+      await transaction.rollback();
+      return res.status(404).json({ success: false, error: 'Product not found' });
+    }
+
+    if (product.stock < 1) {
+      await transaction.rollback();
+      return res.status(400).json({ success: false, error: `Insufficient stock for ${product.name}` });
+    }
+
+    const totalAmount = parseFloat(product.price);
+
+    // Reduce stock
+    await product.update({ stock: product.stock - 1 }, { transaction });
+
+    // Create order
+    const order = await Order.create({ customerId, totalAmount }, { transaction });
+
+    // Create order item
+    await OrderItem.create({ orderId: order.id, productId: product_id, quantity: 1, price: product.price }, { transaction });
+
+    await transaction.commit();
+
+    const completeOrder = await Order.findByPk(order.id, {
+      include: [
+        { model: Customer, as: 'customer' },
+        { model: OrderItem, as: 'items', include: [{ model: Product, as: 'product' }] }
+      ]
+    });
+    console.log('completeOrder', completeOrder)
+    res.status(201).json({ success: true, data: completeOrder });
+  } catch (error) {
+    await transaction.rollback();
+    res.status(400).json({ success: false, error: error.message });
+  }
+};
+
 module.exports = {
   createOrder,
+  quickCreateOrder,
   getAllOrders,
   getOrderById,
   getOrdersByCustomer,

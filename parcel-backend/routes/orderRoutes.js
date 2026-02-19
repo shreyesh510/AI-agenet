@@ -6,10 +6,11 @@ const {
   getOrderById,
   getOrdersByCustomer,
   updateOrderStatus,
-  deleteOrder
+  deleteOrder,
+  quickCreateOrder
 } = require('../controllers/orderController');
 
-router.post('/', createOrder);
+router.post('/', quickCreateOrder);
 router.get('/', getAllOrders);
 router.get('/:id', getOrderById);
 router.get('/customer/:customerId', getOrdersByCustomer);

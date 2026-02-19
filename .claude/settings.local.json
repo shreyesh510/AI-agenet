@@ -9,7 +9,10 @@
       "Bash(dir:*)",
       "Bash(findstr:*)",
       "Bash(xargs:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(npm create:*)",
+      "Bash(pushd:*)",
+      "Bash(popd:*)"
     ]
   }
 }
